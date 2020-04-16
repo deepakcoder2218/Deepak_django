@@ -1,0 +1,21 @@
+{% extends "main_template.html"%}
+{% block title%} my Hello Page{% endblock%}
+{% block content%}
+
+Hello wolrd!!!<p> real name is {{name}}</p>
+
+{% if gender == 1 %}
+He is a male
+
+{% elif gender == 0 %}
+She is a female
+
+{% else %}
+gender not defined
+
+{% endif %}
+
+{%load static%}
+<script type="text/javascript" src="{% static 'shop/demo.js'%}" </script>
+
+{% endblock%}
